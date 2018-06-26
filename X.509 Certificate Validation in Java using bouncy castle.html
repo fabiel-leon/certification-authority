@@ -1,0 +1,1254 @@
+<html>
+<head>
+<title>mail</title>
+<link rel="important stylesheet" href="chrome://messagebody/skin/messageBody.css">
+</head>
+<body>
+<table border=0 cellspacing=0 cellpadding=0 width="100%" class="header-part1"><tr><td><b>Asunto: </b>mail</td></tr><tr><td><b>De: </b>App &lt;app@simplejtpc.appspotmail.com&gt;</td></tr><tr><td><b>Fecha: </b>26/01/2016 2:39</td></tr></table><table border=0 cellspacing=0 cellpadding=0 width="100%" class="header-part2"><tr><td><b>Para: </b>&quot;=?UTF-8?B?IkluZy4gRmFiaWVsIExlw7NuIg==?=&quot; &lt;fabiel@emsume.sld.cu&gt;</td></tr></table><br>
+<!DOCTYPE html>
+<html lang="en-US">
+ <head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <title>X.509 Certificate Validation in Java: Build and Verify Chain and Verify CLR with Bouncy Castle | Svetlin Nakov's Blog</title> 
+  <link rel="alternate" type="application/rss+xml" title="Svetlin Nakov - Official Web Site and Blog » X.509 Certificate Validation in Java: Build and Verify Chain and Verify CLR with Bouncy Castle Comments Feed" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/feed/"> 
+  <script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.nakov.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script> 
+  <style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style> 
+  <link rel="stylesheet" id="customized-recent-comments-css" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/plugins/customized-recent-comments/css/style.css?ver=4.4.1" type="text/css" media="all"> 
+  <script type="text/javascript" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-includes/js/jquery/jquery.js?ver=1.11.3"></script> 
+  <script type="text/javascript" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script> 
+  <link rel="https://api.w.org/" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-json/"> 
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/xmlrpc.php?rsd"> 
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-includes/wlwmanifest.xml"> 
+  <link rel="prev" title="NHibernate Lazy Loading BLOB column" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/11/30/nhibernate-lazy-loading-blob-column/"> 
+  <link rel="next" title="Svetlin Nakov is No Longer Involved in the National Academy for Software Development (NASD)" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/svetlin-nakov-is-no-longer-involved-in-national-academy-for-software-development-nasd/"> 
+  <meta name="generator" content="WordPress 4.4.1"> 
+  <link rel="canonical" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/"> 
+  <link rel="shortlink" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/?p=150"> 
+  <link rel="alternate" type="application/json+oembed" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.nakov.com%2Fblog%2F2009%2F12%2F01%2Fx509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle%2F"> 
+  <link rel="alternate" type="text/xml+oembed" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.nakov.com%2Fblog%2F2009%2F12%2F01%2Fx509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle%2F&amp;format=xml"> 
+  <!-- platinum seo pack 1.3.8 --> 
+  <meta name="robots" content="index,follow,noodp,noydir"> 
+  <meta name="description" content="For one of my recent projects I needed to implement X.509 certificate validation library that validates a certificate across given set of trusted root |  Svetlin Nakov\'s Blog"> 
+  <meta name="keywords" content="crl distribution point,crlURL,intermediate certificates,java security,org,return,root ca certificates,root certificates,security,set,blog,english,java"> 
+  <link rel="canonical" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/"> 
+  <!-- /platinum one seo pack --> 
+  <style type="text/css">	.ssba {
+									
+									
+									
+									
+								}
+								.ssba img
+								{
+									width: 45px !important;
+									padding: 10px;
+									border:  0;
+									box-shadow: none !important;
+									display: inline !important;
+									vertical-align: middle;
+								}
+								.ssba, .ssba a
+								{
+									text-decoration:none;
+									border:0;
+									background: none;
+									
+									
+									
+									font-weight: bold;
+								}</style> 
+  <link rel="stylesheet" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/plugins/nktagcloud/css/page.css?v=0.9.0" type="text/css" media="all"> 
+  <style type="text/css" id="syntaxhighlighteranchor"></style> 
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/feed/"> 
+  <link rel="alternate" type="text/xml" title="RSS .92" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/feed/rss/"> 
+  <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/feed/atom/"> 
+  <link rel="pingback" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/xmlrpc.php"> 
+  <link rel="author" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=https://plus.google.com/107747831641274754501"> 
+  <link property="stylesheet" rel="stylesheet" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/css/style.css" type="text/css"> 
+  <script defer src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/js/jquery.flexslider-min.js"></script> 
+  <script src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/scripts/jquery-1.6.2.min.js"></script> 
+  <script src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/scripts/nakovCom.js"></script> 
+ </head> 
+ <body class="single single-post postid-150 single-format-standard"> 
+  <script type="text/javascript">
+$(window).load(function(){
+    $('.flexslider').flexslider({
+    	animation: "fade",
+		controlNav: false,
+    	directionNav: false,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+	});
+});
+</script> 
+  <script language="JavaScript">
+<!--
+function PopUp(URL) {
+window.open(URL, 'Windowname', 'width=450, height=300, toolbar=0, scrollbars=1 ,statusbar=0,menubar=0');
+}
+//-->
+$('a').each(function() {
+	var href = $(this).attr('href');
+	$(this).removeAttr('target');
+	$(this).attr("href", "javascript:PopUp('" + href +"')");
+});
+</script> 
+  <header> 
+   <a class="mobile" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#">Menu <em>☰</em></a> 
+   <nav> 
+    <ul> 
+     <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com"><a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon.svg"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon.svg" onerror="this.src='img/icon.png'" alt="" title=""></a><br> Home</a> </li> 
+     <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/about/" title="About"><a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon2.svg"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon2.svg" onerror="this.src='img/icon2.png'" alt="" title=""></a><br> About</a> </li> 
+     <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/books/" title="Books"><a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon3.svg"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon3.svg" onerror="this.src='img/icon3.png'" alt="" title=""></a><br> Books</a> </li> 
+     <li class="courses"> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/courses/" title="Courses"><a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon4.svg"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon4.svg" onerror="this.src='img/icon4.png'" alt="" title=""></a><br> Courses</a> </li> 
+     <li class="videos"> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/videos/"><a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon5.svg"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon5.svg" onerror="this.src='img/icon5.png'" alt="" title="Videos"></a><br> Videos</a> </li> 
+     <li class="presentations"> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/presentations/" title="Presentations"><a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon6.svg"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon6.svg" onerror="this.src='img/icon6.png'" alt=""></a><br> Presentations</a> </li> 
+     <li class="research"> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/research/" title="Research"><a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon7.svg"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon7.svg" onerror="this.src='img/icon7.png'" alt=""></a><br> Research</a> </li> 
+     <li class="publications"> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/publications/" title="Publications"><a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon8.svg"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon8.svg" onerror="this.src='img/icon8.png'" alt=""></a><br> Publications</a> </li> 
+     <li class="others"> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/others/" title="Others"><a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon9.svg"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon9.svg" onerror="this.src='img/icon9.png'" alt=""></a><br> Others</a> </li> 
+     <li class="contacts"> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/contacts/" title="Contacts"><a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon10.svg"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon10.svg" onerror="this.src='img/icon10.png'" alt=""></a><br> Contacts</a> </li> 
+     <li class="rss"> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/feed"><a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon11.svg"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon11.svg" onerror="this.src='img/icon11.png'" alt=""></a><br> <span>RSS Feed</span></a> </li> 
+    </ul> 
+   </nav> 
+   <div> 
+    <ul> 
+     <li id="sh"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#search" title="" class="smoothScroll"> <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon13.svg"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon13.svg" onerror="this.src='img/icon.png'" alt="" title=""></a><br> Search</a></li> 
+     <li id="more"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#footer-widgets" title=""> <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon12.svg"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/icon12.svg" onerror="this.src='img/icon.png'" alt="" title=""></a><br> More</a></li> 
+    </ul> 
+   </div> 
+  </header> 
+  <section class="inner-image"> 
+   <hgroup> 
+    <h1 class="site-title"><a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/logo2.svg"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/img/logo2.svg" alt="" title=""></a>&nbsp;</h1> 
+    <h2 class="site-description">Thoughts on Software Engineering</h2> 
+   </hgroup> 
+  </section> 
+  <div class="main-content"> 
+   <div class="post-content"> 
+    <h1 class="entry-title">X.509 Certificate Validation in Java: Build and Verify Chain and Verify CLR with Bouncy Castle</h1> 
+    <div class="post-meta"> 
+     <div class="date">
+      December 1, 2009
+     </div>
+     <div class="share-buttons" style="margin-top:0.5em;">
+      <!-- Simple Share Buttons Adder (6.1.4) simplesharebuttons.com -->
+      <div class="ssba ssba-wrap">
+       <div style="text-align:left">
+        <a data-site="" class="ssba_facebook_share" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.facebook.com/sharer.php?u=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/"><a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/plugins/simple-share-buttons-adder/buttons/arbenta/facebook.png"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/plugins/simple-share-buttons-adder/buttons/arbenta/facebook.png" title="Facebook" class="ssba ssba-img" alt="Share on Facebook"></a></a>
+        <a data-site="" class="ssba_twitter_share" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://twitter.com/share?url=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/&amp;text=X.509+Certificate+Validation+in+Java%3A+Build+and+Verify+Chain+and+Verify+CLR+with+Bouncy+Castle+"><a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/plugins/simple-share-buttons-adder/buttons/arbenta/twitter.png"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/plugins/simple-share-buttons-adder/buttons/arbenta/twitter.png" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter"></a></a>
+        <a data-site="linkedin" class="ssba_linkedin_share ssba_share_link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/"><a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/plugins/simple-share-buttons-adder/buttons/arbenta/linkedin.png"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/plugins/simple-share-buttons-adder/buttons/arbenta/linkedin.png" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn"></a></a>
+        <a data-site="" class="ssba_google_share" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=https://plus.google.com/share?url=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/"><a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://www.nakov.com/wp-content/plugins/simple-share-buttons-adder/buttons/arbenta/google.png"> <img src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/plugins/simple-share-buttons-adder/buttons/arbenta/google.png" title="Google+" class="ssba ssba-img" alt="Share on Google+"></a></a>
+       </div>
+      </div>
+     </div> 
+    </div> 
+    <div class="post-text"> 
+     <p>For one of my recent projects I needed to implement X.509 certificate validation library that validates a certificate across given set of trusted root certificated and a set of intermediate certificate. Initially I thought this is a problem that has already out-of-the-box solution in BouncyCastle but the CRL verification was found to be unpleasant to implement and not available out-of-the-box.<br> The task was formulated as follows: given a X.509 certificate and a set of trusted root certificates and a set of intermediate certificates to build a certification chain (if possible) and to extract the CRL distribution point from the certificate (if available) and to check whether the certificate is not revoked. It was required to support HTTP, HTPS, FTP and LDAP based distribution points.<br> I will not get into more details because I don’t heve too much time but I think the code is clear enough, so most developers will be able to read, understand and use it:</p> 
+     <pre class="brush: java; title: ; notranslate" title="">
+import java.security.GeneralSecurityException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.security.NoSuchProviderException;
+import java.security.PublicKey;
+import java.security.SignatureException;
+import java.security.cert.CertPathBuilder;
+import java.security.cert.CertPathBuilderException;
+import java.security.cert.CertStore;
+import java.security.cert.CertificateException;
+import java.security.cert.CollectionCertStoreParameters;
+import java.security.cert.PKIXBuilderParameters;
+import java.security.cert.PKIXCertPathBuilderResult;
+import java.security.cert.TrustAnchor;
+import java.security.cert.X509CertSelector;
+import java.security.cert.X509Certificate;
+import java.util.HashSet;
+import java.util.Set;
+
+/**
+ * Class for building a certification chain for given certificate and verifying
+ * it. Relies on a set of root CA certificates and intermediate certificates
+ * that will be used for building the certification chain. The verification
+ * process assumes that all self-signed certificates in the set are trusted
+ * root CA certificates and all other certificates in the set are intermediate
+ * certificates.
+ * 
+ * @author Svetlin Nakov
+ */
+public class CertificateVerifier {
+	
+	/**
+	 * Attempts to build a certification chain for given certificate and to verify
+	 * it. Relies on a set of root CA certificates and intermediate certificates
+	 * that will be used for building the certification chain. The verification
+	 * process assumes that all self-signed certificates in the set are trusted
+	 * root CA certificates and all other certificates in the set are intermediate
+	 * certificates. 
+	 * 
+	 * @param cert - certificate for validation
+	 * @param additionalCerts - set of trusted root CA certificates that will be
+	 * 		used as "trust anchors" and intermediate CA certificates that will be
+	 * 		used as part of the certification chain. All self-signed certificates
+	 * 		are considered to be trusted root CA certificates. All the rest are
+	 * 		considered to be intermediate CA certificates.
+	 * @return the certification chain (if verification is successful)
+	 * @throws CertificateVerificationException - if the certification is not
+	 * 		successful (e.g. certification path cannot be built or some
+	 * 		certificate in the chain is expired or CRL checks are failed)
+	 */
+	public static PKIXCertPathBuilderResult verifyCertificate(X509Certificate cert, 
+			Set&lt;x509certificate&gt; additionalCerts)
+			throws CertificateVerificationException {
+		try {
+			// Check for self-signed certificate
+			if (isSelfSigned(cert)) {
+				throw new CertificateVerificationException(
+					"The certificate is self-signed.");
+			}
+			
+			// Prepare a set of trusted root CA certificates
+			// and a set of intermediate certificates
+			Set&lt;/x509certificate&gt;&lt;x509certificate&gt; trustedRootCerts = new HashSet&lt;/x509certificate&gt;&lt;x509certificate&gt;();
+			Set&lt;/x509certificate&gt;&lt;x509certificate&gt; intermediateCerts = new HashSet&lt;/x509certificate&gt;&lt;x509certificate&gt;();
+			for (X509Certificate additionalCert : additionalCerts) {
+				if (isSelfSigned(additionalCert)) {
+					trustedRootCerts.add(additionalCert);
+				} else {
+					intermediateCerts.add(additionalCert);
+				}
+			}
+			
+			// Attempt to build the certification chain and verify it
+			PKIXCertPathBuilderResult verifiedCertChain = 
+				verifyCertificate(cert, trustedRootCerts, intermediateCerts);
+			
+			// Check whether the certificate is revoked by the CRL
+			// given in its CRL distribution point extension
+			CRLVerifier.verifyCertificateCRLs(cert);
+	
+			// The chain is built and verified. Return it as a result
+			return verifiedCertChain;
+		} catch (CertPathBuilderException certPathEx) {
+			throw new CertificateVerificationException(
+				"Error building certification path: " + 
+				cert.getSubjectX500Principal(), certPathEx);
+		} catch (CertificateVerificationException cvex) {
+			throw cvex;
+		} catch (Exception ex) {
+			throw new CertificateVerificationException(
+				"Error verifying the certificate: " + 
+				cert.getSubjectX500Principal(), ex);
+		}		
+	}
+	
+	/**
+	 * Checks whether given X.509 certificate is self-signed.
+	 */
+	public static boolean isSelfSigned(X509Certificate cert)
+			throws CertificateException, NoSuchAlgorithmException,
+			NoSuchProviderException {
+		try {
+			// Try to verify certificate signature with its own public key
+			PublicKey key = cert.getPublicKey();
+			cert.verify(key);
+			return true;
+		} catch (SignatureException sigEx) {
+			// Invalid signature --&gt; not self-signed
+			return false;
+		} catch (InvalidKeyException keyEx) {
+			// Invalid key --&gt; not self-signed
+			return false;
+		}
+	}
+	
+	/**
+	 * Attempts to build a certification chain for given certificate and to verify
+	 * it. Relies on a set of root CA certificates (trust anchors) and a set of
+	 * intermediate certificates (to be used as part of the chain).
+	 * @param cert - certificate for validation
+	 * @param trustedRootCerts - set of trusted root CA certificates
+	 * @param intermediateCerts - set of intermediate certificates
+	 * @return the certification chain (if verification is successful)
+	 * @throws GeneralSecurityException - if the verification is not successful
+	 * 		(e.g. certification path cannot be built or some certificate in the
+	 * 		chain is expired)
+	 */
+	private static PKIXCertPathBuilderResult verifyCertificate(X509Certificate cert, Set&lt;/x509certificate&gt;&lt;x509certificate&gt; trustedRootCerts,
+			Set&lt;/x509certificate&gt;&lt;x509certificate&gt; intermediateCerts) throws GeneralSecurityException {
+		
+		// Create the selector that specifies the starting certificate
+		X509CertSelector selector = new X509CertSelector(); 
+	    selector.setCertificate(cert);
+	    
+	    // Create the trust anchors (set of root CA certificates)
+	    Set&lt;trustanchor&gt; trustAnchors = new HashSet&lt;/trustanchor&gt;&lt;trustanchor&gt;();
+	    for (X509Certificate trustedRootCert : trustedRootCerts) {
+	    	trustAnchors.add(new TrustAnchor(trustedRootCert, null));
+	    }
+	    
+	    // Configure the PKIX certificate builder algorithm parameters
+	    PKIXBuilderParameters pkixParams = 
+			new PKIXBuilderParameters(trustAnchors, selector);
+		
+		// Disable CRL checks (this is done manually as additional step)
+		pkixParams.setRevocationEnabled(false);
+	
+		// Specify a list of intermediate certificates
+		CertStore intermediateCertStore = CertStore.getInstance("Collection",
+			new CollectionCertStoreParameters(intermediateCerts), "BC");
+		pkixParams.addCertStore(intermediateCertStore);
+	
+		// Build and verify the certification chain
+		CertPathBuilder builder = CertPathBuilder.getInstance("PKIX", "BC");
+		PKIXCertPathBuilderResult result = 
+			(PKIXCertPathBuilderResult) builder.build(pkixParams);
+		return result;
+	}
+	
+}
+
+------------------------
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.security.cert.CRLException;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateFactory;
+import java.security.cert.CertificateParsingException;
+import java.security.cert.X509CRL;
+import java.security.cert.X509Certificate;
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.List;
+
+import javax.naming.Context;
+import javax.naming.NamingException;
+import javax.naming.directory.Attribute;
+import javax.naming.directory.Attributes;
+import javax.naming.directory.DirContext;
+import javax.naming.directory.InitialDirContext;
+
+import org.bouncycastle.asn1.ASN1InputStream;
+import org.bouncycastle.asn1.DERIA5String;
+import org.bouncycastle.asn1.DERObject;
+import org.bouncycastle.asn1.DEROctetString;
+import org.bouncycastle.asn1.x509.CRLDistPoint;
+import org.bouncycastle.asn1.x509.DistributionPoint;
+import org.bouncycastle.asn1.x509.DistributionPointName;
+import org.bouncycastle.asn1.x509.GeneralName;
+import org.bouncycastle.asn1.x509.GeneralNames;
+import org.bouncycastle.asn1.x509.X509Extensions;
+
+/**
+ * Class that verifies CRLs for given X509 certificate. Extracts the CRL
+ * distribution points from the certificate (if available) and checks the
+ * certificate revocation status against the CRLs coming from the
+ * distribution points. Supports HTTP, HTTPS, FTP and LDAP based URLs.
+ * 
+ * @author Svetlin Nakov
+ */
+public class CRLVerifier {
+
+	/**
+	 * Extracts the CRL distribution points from the certificate (if available)
+	 * and checks the certificate revocation status against the CRLs coming from
+	 * the distribution points. Supports HTTP, HTTPS, FTP and LDAP based URLs.
+	 * 
+	 * @param cert the certificate to be checked for revocation
+	 * @throws CertificateVerificationException if the certificate is revoked
+	 */
+	public static void verifyCertificateCRLs(X509Certificate cert)
+			throws CertificateVerificationException {
+		try {
+			List&lt;string&gt; crlDistPoints = getCrlDistributionPoints(cert);
+			for (String crlDP : crlDistPoints) {
+				X509CRL crl = downloadCRL(crlDP);
+				if (crl.isRevoked(cert)) {
+					throw new CertificateVerificationException(
+							"The certificate is revoked by CRL: " + crlDP);
+				}
+			}
+		} catch (Exception ex) {
+			if (ex instanceof CertificateVerificationException) {
+				throw (CertificateVerificationException) ex;
+			} else {
+				throw new CertificateVerificationException(
+						"Can not verify CRL for certificate: " + 
+						cert.getSubjectX500Principal());
+			}
+		}
+	}
+
+	/**
+	 * Downloads CRL from given URL. Supports http, https, ftp and ldap based URLs.
+	 */
+	private static X509CRL downloadCRL(String crlURL) throws IOException,
+			CertificateException, CRLException,
+			CertificateVerificationException, NamingException {
+		if (crlURL.startsWith("http://") || crlURL.startsWith("https://")
+				|| crlURL.startsWith("ftp://")) {
+			X509CRL crl = downloadCRLFromWeb(crlURL);
+			return crl;
+		} else if (crlURL.startsWith("ldap://")) {
+			X509CRL crl = downloadCRLFromLDAP(crlURL);
+			return crl;
+		} else {
+			throw new CertificateVerificationException(
+					"Can not download CRL from certificate " +
+					"distribution point: " + crlURL);
+		}
+	}
+
+	/**
+	 * Downloads a CRL from given LDAP url, e.g.
+	 * ldap://ldap.infonotary.com/dc=identity-ca,dc=infonotary,dc=com
+	 */
+	private static X509CRL downloadCRLFromLDAP(String ldapURL) 
+			throws CertificateException, NamingException, CRLException, 
+			CertificateVerificationException {
+		Hashtable&lt;/string&gt;&lt;string , String&gt; env = new Hashtable&lt;/string&gt;&lt;string , String&gt;();
+		env.put(Context.INITIAL_CONTEXT_FACTORY, 
+				"com.sun.jndi.ldap.LdapCtxFactory");
+        env.put(Context.PROVIDER_URL, ldapURL);
+
+        DirContext ctx = new InitialDirContext(env);
+        Attributes avals = ctx.getAttributes("");
+        Attribute aval = avals.get("certificateRevocationList;binary");
+        byte[] val = (byte[])aval.get();
+        if ((val == null) || (val.length == 0)) {
+        	throw new CertificateVerificationException(
+        			"Can not download CRL from: " + ldapURL);
+        } else {
+        	InputStream inStream = new ByteArrayInputStream(val);
+            CertificateFactory cf = CertificateFactory.getInstance("X.509");
+        	X509CRL crl = (X509CRL)cf.generateCRL(inStream);
+        	return crl;
+        }
+	}
+	
+	/**
+	 * Downloads a CRL from given HTTP/HTTPS/FTP URL, e.g.
+	 * http://crl.infonotary.com/crl/identity-ca.crl
+	 */
+	private static X509CRL downloadCRLFromWeb(String crlURL)
+			throws MalformedURLException, IOException, CertificateException,
+			CRLException {
+		URL url = new URL(crlURL);
+		InputStream crlStream = url.openStream();
+		try {
+			CertificateFactory cf = CertificateFactory.getInstance("X.509");
+			X509CRL crl = (X509CRL) cf.generateCRL(crlStream);
+			return crl;
+		} finally {
+			crlStream.close();
+		}
+	}
+
+	/**
+	 * Extracts all CRL distribution point URLs from the "CRL Distribution Point"
+	 * extension in a X.509 certificate. If CRL distribution point extension is
+	 * unavailable, returns an empty list. 
+	 */
+	public static List&lt;/string&gt;&lt;string&gt; getCrlDistributionPoints(
+			X509Certificate cert) throws CertificateParsingException, IOException {
+		byte[] crldpExt = cert.getExtensionValue(
+				X509Extensions.CRLDistributionPoints.getId());
+		if (crldpExt == null) {
+			List&lt;/string&gt;&lt;string&gt; emptyList = new ArrayList&lt;/string&gt;&lt;string&gt;();
+			return emptyList;
+		}
+		ASN1InputStream oAsnInStream = new ASN1InputStream(
+				new ByteArrayInputStream(crldpExt));
+		DERObject derObjCrlDP = oAsnInStream.readObject();
+		DEROctetString dosCrlDP = (DEROctetString) derObjCrlDP;
+		byte[] crldpExtOctets = dosCrlDP.getOctets();
+		ASN1InputStream oAsnInStream2 = new ASN1InputStream(
+				new ByteArrayInputStream(crldpExtOctets));
+		DERObject derObj2 = oAsnInStream2.readObject();
+		CRLDistPoint distPoint = CRLDistPoint.getInstance(derObj2);
+		List&lt;/string&gt;&lt;string&gt; crlUrls = new ArrayList&lt;/string&gt;&lt;string&gt;();
+		for (DistributionPoint dp : distPoint.getDistributionPoints()) {
+            DistributionPointName dpn = dp.getDistributionPoint();
+            // Look for URIs in fullName
+            if (dpn != null) {
+                if (dpn.getType() == DistributionPointName.FULL_NAME) {
+                    GeneralName[] genNames = GeneralNames.getInstance(
+                        dpn.getName()).getNames();
+                    // Look for an URI
+                    for (int j = 0; j &lt; genNames.length; j++) {
+                        if (genNames[j].getTagNo() == GeneralName.uniformResourceIdentifier) {
+                            String url = DERIA5String.getInstance(
+                                genNames[j].getName()).getString();
+                            crlUrls.add(url);
+                        }
+                    }
+                }
+            }
+		}
+		return crlUrls;
+	}
+
+}
+
+------------------------
+
+import java.security.cert.PKIXCertPathBuilderResult;
+
+/**
+ * This class keeps the result from the certificate verification
+ * process. If the the certificate is verified as valid, the built
+ * certification chain is stored in the Result property. If the
+ * certificate is invalid, the problem is stored in the Exception
+ * property. 
+ * 
+ * @author Svetlin Nakov
+ */
+public class CertificateVerificationResult {
+	private boolean valid;
+	private PKIXCertPathBuilderResult result;
+	private Throwable exception;
+	
+	/**
+	 * Constructs a certificate verification result for valid
+	 * certificate by given certification path.
+	 */
+	public CertificateVerificationResult(
+			PKIXCertPathBuilderResult result) {
+		this.valid = true;
+		this.result = result;
+	}
+
+	/**
+	 * Constructs a certificate verification result for invalid
+	 * certificate by given exception that keeps the problem
+	 * occurred during the verification process.
+	 */
+	public CertificateVerificationResult(Throwable exception) {
+		this.valid = false;
+		this.exception = exception;
+	}
+
+	public boolean isValid() {
+		return valid;
+	}
+
+	public PKIXCertPathBuilderResult getResult() {
+		return result;
+	}
+
+	public Throwable getException() {
+		return exception;
+	}	
+}
+
+------------------------
+
+/**
+ * This class wraps an exception that could be thrown during
+ * the certificate verification process.
+ * 
+ * @author Svetlin Nakov
+ */
+public class CertificateVerificationException extends Exception {
+	private static final long serialVersionUID = 1L;
+
+	public CertificateVerificationException(String message, Throwable cause) {
+        super(message, cause);
+    }
+
+	public CertificateVerificationException(String message) {
+        super(message);
+    }
+}
+
+</pre> 
+     <p>I hope the above coude could be useful to anybody trying to build and validate X.509 certificate chain and check the CRL revocation status.<br> </p> 
+    </div> 
+    <div class="tagged">
+      Tags: 
+     <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/tag/crl-distribution-point/" rel="tag">crl distribution point</a> 
+     <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/tag/crlurl/" rel="tag">crlURL</a> 
+     <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/tag/intermediate-certificates/" rel="tag">intermediate certificates</a> 
+     <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/tag/java-security/" rel="tag">java security</a> 
+     <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/tag/org/" rel="tag">org</a> 
+     <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/tag/return/" rel="tag">return</a> 
+     <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/tag/root-ca-certificates/" rel="tag">root ca certificates</a> 
+     <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/tag/root-certificates/" rel="tag">root certificates</a> 
+     <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/tag/security/" rel="tag">security</a> 
+     <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/tag/set/" rel="tag">set</a> 
+    </div> 
+    <div class="post-comments">
+      Previews (25,151), Views (19,547), 
+     <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comments">Comments (27)</a> 
+    </div> 
+    <div class="comments"> 
+     <!-- You can start editing here. --> 
+     <h3 id="comments">27 Responses to “X.509 Certificate Validation in Java: Build and Verify Chain and Verify CLR with Bouncy Castle”</h3> 
+     <div class="navigation"> 
+      <div class="alignleft"></div> 
+      <div class="alignright"></div> 
+     </div> 
+     <ol class="commentlist"> 
+      <li class="comment even thread-even depth-1" id="comment-650"> 
+       <div id="div-comment-650" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://0.gravatar.com/avatar/0276db912e89ee8d4ee124ad10af4777?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://0.gravatar.com/avatar/0276db912e89ee8d4ee124ad10af4777?s=32&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/0276db912e89ee8d4ee124ad10af4777?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn">Rod</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-650"> December 22, 2010 at 17:20</a> 
+        </div> 
+        <p>Great example, well written and complete. Many thanks …the code answered many questions I had regarding CRL’s.</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=650#respond" onclick="return addComment.moveForm( &quot;div-comment-650&quot;, &quot;650&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Rod">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-745"> 
+       <div id="div-comment-745" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://0.gravatar.com/avatar/07735a32d5d402f40e7019f7d2f30b6a?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://0.gravatar.com/avatar/07735a32d5d402f40e7019f7d2f30b6a?s=32&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/07735a32d5d402f40e7019f7d2f30b6a?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn">Dpak</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-745"> March 17, 2011 at 05:47</a> 
+        </div> 
+        <p>Great Great Example. I second Rod’s comment. I have one question though. Do we need to add the certificate in question or the certificate to be validated in the intermediate cert list? I will really appreciate if you help me with this question.<br> Thank you so much anyway for this.<br> Regards,<br> Dpak</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=745#respond" onclick="return addComment.moveForm( &quot;div-comment-745&quot;, &quot;745&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Dpak">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment byuser comment-author-nakov bypostauthor even thread-even depth-1" id="comment-757"> 
+       <div id="div-comment-757" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://1.gravatar.com/avatar/135d87a723e092f3679721f212297415?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://1.gravatar.com/avatar/135d87a723e092f3679721f212297415?s=32&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/135d87a723e092f3679721f212297415?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com" rel="external nofollow" class="url">nakov</a></cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-757"> March 24, 2011 at 00:35</a> 
+        </div> 
+        <p>In the additional set of certificates you need to add the trusted Root CA certificates and all intermediate certificates. The certificate that need to be validated does not need to be in this set.</p> 
+        <p>Regards, Svetlin</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=757#respond" onclick="return addComment.moveForm( &quot;div-comment-757&quot;, &quot;757&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to nakov">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-799"> 
+       <div id="div-comment-799" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://1.gravatar.com/avatar/?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://1.gravatar.com/avatar/?s=32&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo avatar-default" height="32" width="32"></a> 
+         <cite class="fn">Tomas</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-799"> May 1, 2011 at 19:50</a> 
+        </div> 
+        <p>Are you sure that the certificate that need to be validated does not need to be in set of intermediate certificates? If it is correct I have probably something wrong and I don’t understand what. Can you explain it to me please?</p> 
+        <p>I set up this testing scenario:<br> RCA (CN=ca.org) created as root CA<br> ICA1 (CN=ica.org) created as intermediate CA signed by RCA<br> ICA2 (CN=ica2.org) created as intermediate CA signed by ICA1<br> UC (CN=user.org) created as server certificate signed ICA2</p> 
+        <p>When I don’t add UC (CN=user.org) certificate to intermediate certificates set (aC) I get<br> CertificateVerificationException: Error building certification path: CN=user.org, O=Internet Widgits Pty Ltd, ST=Some-State, C=AU</p> 
+        <p>When I add also user.org certificate to intermediate certificates set everything is ok.</p> 
+        <p>I verified user.org with openssl and it is OK:<br> $ (cat rca.pem ; cat ica1.pem ; cat ica2.pem ) &gt; ca.pem<br> $ openssl verify -CAfile ca.pem user.pem<br> user.pem: OK</p> 
+        <p>Code is:</p> 
+        <p> Set aC = new HashSet();<br> aC.add(RCA);<br> aC.add(ICA1);<br> aC.add(ICA2);<br> PKIXCertPathBuilderResult ver = CertificateVerifier.verifyCertificate(UC, aC);<br> /* ^ here I get CertificateVerificationException */</p> 
+        <p>vs.</p> 
+        <p> Set aC = new HashSet();<br> aC.add(RCA);<br> aC.add(ICA1);<br> aC.add(ICA2);<br> aC.add(UC);<br> PKIXCertPathBuilderResult ver = CertificateVerifier.verifyCertificate(UC, aC);<br> /* ^ here it is OK */</p> 
+        <p>Thank you very much.</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=799#respond" onclick="return addComment.moveForm( &quot;div-comment-799&quot;, &quot;799&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Tomas">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment even thread-even depth-1" id="comment-2227"> 
+       <div id="div-comment-2227" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://1.gravatar.com/avatar/7b5526bfe28d65b193a8c511dadd010b?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://1.gravatar.com/avatar/7b5526bfe28d65b193a8c511dadd010b?s=32&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/7b5526bfe28d65b193a8c511dadd010b?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn">NoproblemBabe</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-2227"> February 7, 2012 at 20:09</a> 
+        </div> 
+        <p>Thank you, Nakov. I work in a CA, and I ws searching for validation using BC (we have our framework), just out of sheer curiosity…<br> It is a great example. Covers, from what I’ve seen, pretty much all of it.<br> Grand job!</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=2227#respond" onclick="return addComment.moveForm( &quot;div-comment-2227&quot;, &quot;2227&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to NoproblemBabe">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-2596"> 
+       <div id="div-comment-2596" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <cite class="fn"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://codeautomate.org/blog/2012/02/certificate-validation-using-jav/" rel="external nofollow" class="url">X.509 Certificate Validation Using Java « codeautomate blog</a></cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-2596"> February 21, 2012 at 08:07</a> 
+        </div> 
+        <p>[…] will check client certificate against available CA certificate stored in JKS file. There is a good tutorial on this case, but still, the code is not working on my computer. So, I tried to manually develop my […]</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=2596#respond" onclick="return addComment.moveForm( &quot;div-comment-2596&quot;, &quot;2596&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to X.509 Certificate Validation Using Java « codeautomate blog">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment even thread-even depth-1" id="comment-2597"> 
+       <div id="div-comment-2597" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://1.gravatar.com/avatar/dfab01eaf5016c19434ab6c8bce1081a?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://1.gravatar.com/avatar/dfab01eaf5016c19434ab6c8bce1081a?s=32&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/dfab01eaf5016c19434ab6c8bce1081a?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://codeautomate.org/blog/" rel="external nofollow" class="url">hervin</a></cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-2597"> February 21, 2012 at 08:45</a> 
+        </div> 
+        <p>Hi, I’m trying to user your code to verify the certificate against list of CA stored in X509Certificate. I extract the X509Certificate in my keystore and validate using your code, but it is not working. Do your code have any limitation regarding certificate stored in java keystore (JKS)? Right now, I’ve built another code to verify my cert chain: <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://codeautomate.org/blog/2012/02/certificate-validation-using-java/" rel="nofollow">http://codeautomate.org/blog/2012/02/certificate-validation-using-java/</a></p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=2597#respond" onclick="return addComment.moveForm( &quot;div-comment-2597&quot;, &quot;2597&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to hervin">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-3329"> 
+       <div id="div-comment-3329" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://2.gravatar.com/avatar/?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://2.gravatar.com/avatar/?s=32&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo avatar-default" height="32" width="32"></a> 
+         <cite class="fn">Aijaz</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-3329"> March 9, 2012 at 14:29</a> 
+        </div> 
+        <p>Great Example</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=3329#respond" onclick="return addComment.moveForm( &quot;div-comment-3329&quot;, &quot;3329&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Aijaz">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment even thread-even depth-1" id="comment-8247"> 
+       <div id="div-comment-8247" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://2.gravatar.com/avatar/2d4d21f8cb515a016dbfe5e3d634706b?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://2.gravatar.com/avatar/2d4d21f8cb515a016dbfe5e3d634706b?s=32&amp;d=mm&amp;r=g" srcset="http://2.gravatar.com/avatar/2d4d21f8cb515a016dbfe5e3d634706b?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn">Andreas Sahlbach</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-8247"> February 4, 2013 at 14:37</a> 
+        </div> 
+        <p>This code doesn’t work (at least with the latest bouncycastle. The certStore in line 150 has to contain all certificates (trusted, intermediate and certToVerify). If this is fixed, the code seems to work. So it’s still a great example, thank you!</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=8247#respond" onclick="return addComment.moveForm( &quot;div-comment-8247&quot;, &quot;8247&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Andreas Sahlbach">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-8802"> 
+       <div id="div-comment-8802" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://1.gravatar.com/avatar/1b1b96c42acab3d877ad4b58b87138df?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://1.gravatar.com/avatar/1b1b96c42acab3d877ad4b58b87138df?s=32&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/1b1b96c42acab3d877ad4b58b87138df?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn">Asma</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-8802"> April 7, 2013 at 16:53</a> 
+        </div> 
+        <p>The code doesn’t work (There’s no main class in CertificateVerifier ).</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=8802#respond" onclick="return addComment.moveForm( &quot;div-comment-8802&quot;, &quot;8802&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Asma">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment even thread-even depth-1" id="comment-8891"> 
+       <div id="div-comment-8891" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://2.gravatar.com/avatar/885fc1d648f1fbbd7b5d4143721683bd?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://2.gravatar.com/avatar/885fc1d648f1fbbd7b5d4143721683bd?s=32&amp;d=mm&amp;r=g" srcset="http://2.gravatar.com/avatar/885fc1d648f1fbbd7b5d4143721683bd?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn">Paul Crocker</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-8891"> May 19, 2013 at 02:21</a> 
+        </div> 
+        <p>Thanks – It works fine for me after tidying the code up a bit and in my case dealing with the case where the CRL URL had been moved – just needed to check the http connnection response code for 301/302 and deal with it .. altering the funcion downloadCRLFromWeb in the CRL verifier. Again, thanks for a very nice example. (for comment nº 10 .. there’s no main class as it’s supposed to used in a package (.jar)</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=8891#respond" onclick="return addComment.moveForm( &quot;div-comment-8891&quot;, &quot;8891&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Paul Crocker">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-8992"> 
+       <div id="div-comment-8992" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://1.gravatar.com/avatar/a9d5eb28ca337d329df71c4ebe62b650?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://1.gravatar.com/avatar/a9d5eb28ca337d329df71c4ebe62b650?s=32&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/a9d5eb28ca337d329df71c4ebe62b650?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.youtube.com/watch?v=UOLTSeGyJBU" rel="external nofollow" class="url">back pain singapore</a></cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-8992"> June 29, 2013 at 22:44</a> 
+        </div> 
+        <p>If you are going for finest contents like I do, just pay a quick visit this site everyday as it<br> gives quality contents, thanks</p> 
+        <p>Also visit my web blog … <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.youtube.com/watch?v=UOLTSeGyJBU" rel="nofollow">back pain singapore</a></p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=8992#respond" onclick="return addComment.moveForm( &quot;div-comment-8992&quot;, &quot;8992&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to back pain singapore">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment even thread-even depth-1" id="comment-10090"> 
+       <div id="div-comment-10090" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://1.gravatar.com/avatar/aa82e3e77c3ab7aa2e19a2494bc6d55c?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://1.gravatar.com/avatar/aa82e3e77c3ab7aa2e19a2494bc6d55c?s=32&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/aa82e3e77c3ab7aa2e19a2494bc6d55c?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn">Mauricio Giacomini</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-10090"> October 17, 2013 at 20:54</a> 
+        </div> 
+        <p>Great example. However, I´m not get compiling because of expression “List”. This expression exists in Java?<br> Yours faithfully.</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=10090#respond" onclick="return addComment.moveForm( &quot;div-comment-10090&quot;, &quot;10090&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Mauricio Giacomini">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-10091"> 
+       <div id="div-comment-10091" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://1.gravatar.com/avatar/aa82e3e77c3ab7aa2e19a2494bc6d55c?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://1.gravatar.com/avatar/aa82e3e77c3ab7aa2e19a2494bc6d55c?s=32&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/aa82e3e77c3ab7aa2e19a2494bc6d55c?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn">Mauricio Giacomini</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-10091"> October 17, 2013 at 21:05</a> 
+        </div> 
+        <p>List that not working for me.<br> Thanks.</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=10091#respond" onclick="return addComment.moveForm( &quot;div-comment-10091&quot;, &quot;10091&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Mauricio Giacomini">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment even thread-even depth-1" id="comment-10092"> 
+       <div id="div-comment-10092" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://1.gravatar.com/avatar/aa82e3e77c3ab7aa2e19a2494bc6d55c?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://1.gravatar.com/avatar/aa82e3e77c3ab7aa2e19a2494bc6d55c?s=32&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/aa82e3e77c3ab7aa2e19a2494bc6d55c?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn">Mauricio Giacomini</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-10092"> October 17, 2013 at 21:07</a> 
+        </div> 
+        <p>Your blog cut my special characters.</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=10092#respond" onclick="return addComment.moveForm( &quot;div-comment-10092&quot;, &quot;10092&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Mauricio Giacomini">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-10445"> 
+       <div id="div-comment-10445" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://1.gravatar.com/avatar/113e7f57833599d01ca13cdae78addf9?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://1.gravatar.com/avatar/113e7f57833599d01ca13cdae78addf9?s=32&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/113e7f57833599d01ca13cdae78addf9?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://google.com" rel="external nofollow" class="url">Francisco</a></cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-10445"> December 21, 2013 at 20:53</a> 
+        </div> 
+        <p>Amazing! This blog looks just like my old one! It’s on a<br> entirely different subject but it has pretty<br> much the same layout and design. Wonderful choice of colors!</p> 
+        <p>Feel free to surf to my weblog; search engine optimization; <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://google.com" rel="nofollow">Francisco</a>,</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=10445#respond" onclick="return addComment.moveForm( &quot;div-comment-10445&quot;, &quot;10445&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Francisco">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment even thread-even depth-1" id="comment-11660"> 
+       <div id="div-comment-11660" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://1.gravatar.com/avatar/df07a02babf75747636876550fe4ff34?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://1.gravatar.com/avatar/df07a02babf75747636876550fe4ff34?s=32&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/df07a02babf75747636876550fe4ff34?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn">Bashar Mohammad Othman</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-11660"> May 26, 2014 at 09:35</a> 
+        </div> 
+        <p>Very very useful ,Big thanks and your job is valuable.</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=11660#respond" onclick="return addComment.moveForm( &quot;div-comment-11660&quot;, &quot;11660&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Bashar Mohammad Othman">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-11667"> 
+       <div id="div-comment-11667" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://2.gravatar.com/avatar/?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://2.gravatar.com/avatar/?s=32&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo avatar-default" height="32" width="32"></a> 
+         <cite class="fn">Diego Mariano</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-11667"> May 29, 2014 at 16:29</a> 
+        </div> 
+        <p>Thank you so much! Your code works very well for me!</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=11667#respond" onclick="return addComment.moveForm( &quot;div-comment-11667&quot;, &quot;11667&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Diego Mariano">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment even thread-even depth-1" id="comment-106145"> 
+       <div id="div-comment-106145" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://1.gravatar.com/avatar/19372cf1d1311f2301ca8a032739d138?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://1.gravatar.com/avatar/19372cf1d1311f2301ca8a032739d138?s=32&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/19372cf1d1311f2301ca8a032739d138?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn">Yashi</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-106145"> November 5, 2014 at 12:13</a> 
+        </div> 
+        <p>I am having a certificate i want to verify that certificate how can i extract chain certificate from it.I want to know what should i pass in the method,verifyCertificate(X509Certificate cert, Set additionalCerts) in class CertificateVerifier.</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=106145#respond" onclick="return addComment.moveForm( &quot;div-comment-106145&quot;, &quot;106145&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Yashi">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-179652"> 
+       <div id="div-comment-179652" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://0.gravatar.com/avatar/?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://0.gravatar.com/avatar/?s=32&amp;d=mm&amp;r=g" srcset="http://2.gravatar.com/avatar/?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo avatar-default" height="32" width="32"></a> 
+         <cite class="fn">aayush</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-179652"> March 4, 2015 at 09:45</a> 
+        </div> 
+        <p>i am having problem with the function downloadCrlFromLdap(). It says in order to perform operation; a successful bind is required. can you help ?</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=179652#respond" onclick="return addComment.moveForm( &quot;div-comment-179652&quot;, &quot;179652&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to aayush">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment even thread-even depth-1" id="comment-185687"> 
+       <div id="div-comment-185687" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://2.gravatar.com/avatar/590ff74528010958d200751279120c9a?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://2.gravatar.com/avatar/590ff74528010958d200751279120c9a?s=32&amp;d=mm&amp;r=g" srcset="http://2.gravatar.com/avatar/590ff74528010958d200751279120c9a?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn">Arun</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-185687"> March 19, 2015 at 17:44</a> 
+        </div> 
+        <p>Is there a version of this code available in C#?</p> 
+        <p>Thanks,</p> 
+        <p>Arun</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=185687#respond" onclick="return addComment.moveForm( &quot;div-comment-185687&quot;, &quot;185687&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Arun">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-185826"> 
+       <div id="div-comment-185826" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://0.gravatar.com/avatar/?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://0.gravatar.com/avatar/?s=32&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo avatar-default" height="32" width="32"></a> 
+         <cite class="fn">Nakov</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-185826"> March 19, 2015 at 23:28</a> 
+        </div> 
+        <p>I don’t have C# version</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=185826#respond" onclick="return addComment.moveForm( &quot;div-comment-185826&quot;, &quot;185826&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Nakov">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment even thread-even depth-1" id="comment-190699"> 
+       <div id="div-comment-190699" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://0.gravatar.com/avatar/0745f04b6031454e5373d1f40ad44c8e?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://0.gravatar.com/avatar/0745f04b6031454e5373d1f40ad44c8e?s=32&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/0745f04b6031454e5373d1f40ad44c8e?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn">kumar</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-190699"> March 31, 2015 at 00:40</a> 
+        </div> 
+        <p>I have been provided with X509 certificates in PEM format by interface system. they are sending byte of 256 length which they call it as public certificate. I need to verify this 256 bytes with X.509 certificate.Please advice how can I do this.</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=190699#respond" onclick="return addComment.moveForm( &quot;div-comment-190699&quot;, &quot;190699&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to kumar">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-226557"> 
+       <div id="div-comment-226557" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://1.gravatar.com/avatar/7e72a975f4524cd85b3660a7ef6858af?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://1.gravatar.com/avatar/7e72a975f4524cd85b3660a7ef6858af?s=32&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/7e72a975f4524cd85b3660a7ef6858af?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.vitadatoro.it/members/" rel="external nofollow" class="url">all online casinos best bonus casino best bonus casino online best bonus online casino best bonuses best casino best casino bonus best casino bonuses best casino bonuses online best casino download best casino game best casino game to play best casino gam</a></cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-226557"> June 12, 2015 at 22:22</a> 
+        </div> 
+        <p>Wow, awesome blog layout! How long hzve you been blogging for?</p> 
+        <p>you made blogging look easy. The overall look of your site is great, as<br> well as the content!</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=226557#respond" onclick="return addComment.moveForm( &quot;div-comment-226557&quot;, &quot;226557&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to all online casinos best bonus casino best bonus casino online best bonus online casino best bonuses best casino best casino bonus best casino bonuses best casino bonuses online best casino download best casino game best casino game to play best casino gam">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment even thread-even depth-1" id="comment-238805"> 
+       <div id="div-comment-238805" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://1.gravatar.com/avatar/?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://1.gravatar.com/avatar/?s=32&amp;d=mm&amp;r=g" srcset="http://2.gravatar.com/avatar/?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo avatar-default" height="32" width="32"></a> 
+         <cite class="fn">Wladdy</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-238805"> July 1, 2015 at 22:42</a> 
+        </div> 
+        <p>Great tutorial… thanks.</p> 
+        <p>Anybody knows how validate againts OCSP??</p> 
+        <p>Thanks again</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=238805#respond" onclick="return addComment.moveForm( &quot;div-comment-238805&quot;, &quot;238805&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to Wladdy">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-262019"> 
+       <div id="div-comment-262019" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://2.gravatar.com/avatar/86aecc7576229263f742eb008e80c207?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://2.gravatar.com/avatar/86aecc7576229263f742eb008e80c207?s=32&amp;d=mm&amp;r=g" srcset="http://2.gravatar.com/avatar/86aecc7576229263f742eb008e80c207?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"></a> 
+         <cite class="fn"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://casiopusat.blogspot.com/" rel="external nofollow" class="url">casiopusat</a></cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-262019"> August 2, 2015 at 19:53</a> 
+        </div> 
+        <p>i am a just beginer blogger, i want to be a question to you ? how i have SSL Certificates Validation on?</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=262019#respond" onclick="return addComment.moveForm( &quot;div-comment-262019&quot;, &quot;262019&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to casiopusat">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+      <li class="comment even thread-even depth-1" id="comment-329371"> 
+       <div id="div-comment-329371" class="comment-body"> 
+        <div class="comment-author vcard"> 
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=get&amp;body=http://1.gravatar.com/avatar/?s=32&amp;d=mm&amp;r=g"> <img alt="" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://1.gravatar.com/avatar/?s=32&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo avatar-default" height="32" width="32"></a> 
+         <cite class="fn">cau</cite> 
+         <span class="says">says:</span> 
+        </div> 
+        <div class="comment-meta commentmetadata">
+         <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#comment-329371"> December 4, 2015 at 13:43</a> 
+        </div> 
+        <p>Great tutorial, very clear, nevertheless I am wondering why the selector is initialized with the certificate to verify, for me only the Root CA has to be in the selector in order to be matched with the TrustAnchor</p> 
+        <div class="reply">
+         <a rel="nofollow" class="comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/?replytocom=329371#respond" onclick="return addComment.moveForm( &quot;div-comment-329371&quot;, &quot;329371&quot;, &quot;respond&quot;, &quot;150&quot; )" aria-label="Reply to cau">Reply</a>
+        </div> 
+       </div> </li>
+      <!-- #comment-## --> 
+     </ol> 
+     <div class="navigation"> 
+      <div class="alignleft"></div> 
+      <div class="alignright"></div> 
+     </div> 
+     <div id="respond"> 
+      <p><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/feed/"><abbr title="Really Simple Syndication">RSS</abbr> feed for comments on this post.</a> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/trackback/" rel="trackback">TrackBack <abbr title="Universal Resource Locator">URL</abbr></a> </p> 
+      <h3>LEAVE A COMMENT</h3> 
+      <div class="cancel-comment-reply"> 
+       <small><a rel="nofollow" id="cancel-comment-reply-link" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/#respond" style="display:none;">Click here to cancel reply.</a></small> 
+      </div> 
+      <form action="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-comments-post.php" method="post" id="commentform"> 
+       <p><input type="text" name="author" id="author" value="" size="22" tabindex="1"> <label for="author"><small>Name </small></label></p> 
+       <p><input type="text" name="email" id="email" value="" size="22" tabindex="2"> <label for="email"><small>Mail (will not be published) </small></label></p> 
+       <p><input type="text" name="url" id="url" value="" size="22" tabindex="3"> <label for="url"><small>Website</small></label></p> 
+       <!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>--> 
+       <p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p> 
+       <p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment"> <input type="hidden" name="comment_post_ID" value="150" id="comment_post_ID"> <input type="hidden" name="comment_parent" id="comment_parent" value="0"> </p> 
+       <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="852dc42012"></p>
+       <p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="248"></p> 
+      </form> 
+     </div> 
+    </div> 
+    <div id="sh"></div> 
+   </div> 
+   <div id="search" class="search"> 
+    <form role="search" method="get" id="searchform" class="searchform" action="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/"> 
+     <input type="text" class="s" value="Search this site" name="s" id="s"> 
+     <input type="submit" name="searh" class="search-button" value="" id="searchsubmit"> 
+    </form> 
+   </div> 
+   <div id="footer-widgets" class="footer-widgets"> 
+    <article> 
+     <div class="text-widget">
+      <h3>Translation</h3> 
+      <div class="textwidget">
+       <div id="google_translate_element"></div>
+       <script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'bg,en',
+    autoDisplay: false,
+    multilanguagePage: true,
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script>
+       <script src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </div> 
+     </div>
+     <div class="text-widget">
+      <h3>Categories</h3> 
+      <ul> 
+       <li class="cat-item cat-item-6"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/category/dotnet/" title="C#, .NET Framework and Microsoft technologies">.net</a> (89) </li> 
+       <li class="cat-item cat-item-1"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/category/posts/" title="Blog posts, news and other general articles">blog</a> (371) </li> 
+       <li class="cat-item cat-item-7"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/category/bg/" title="Bulgarian language articles">bulgarian</a> (241) </li> 
+       <li class="cat-item cat-item-10"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/category/career/" title="Articles related to career development in the software industry">career</a> (26) </li> 
+       <li class="cat-item cat-item-1243"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/category/contests/" title="Programming, IT and other contests">contests</a> (32) </li> 
+       <li class="cat-item cat-item-1238"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/category/courses/" title="Software development and other courses (mostly free of charge)">courses</a> (88) </li> 
+       <li class="cat-item cat-item-8"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/category/en/" title="English language articles">english</a> (136) </li> 
+       <li class="cat-item cat-item-1300"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/category/html5/">HTML5</a> (10) </li> 
+       <li class="cat-item cat-item-4"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/category/java/" title="Java and related technologies">java</a> (44) </li> 
+       <li class="cat-item cat-item-1242"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/category/seminars/" title="Seminars for software engineers and IT proffessionals (mostly free of charge)">seminars</a> (90) </li> 
+       <li class="cat-item cat-item-1871"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/category/%d0%bd%d0%bb%d0%bf/">НЛП</a> (7) </li> 
+       <li class="cat-item cat-item-1019"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/category/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/">образование</a> (25) </li> 
+       <li class="cat-item cat-item-2051"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/category/%d0%bf%d1%80%d0%b5%d0%b4%d0%bf%d1%80%d0%b8%d0%b5%d0%bc%d0%b0%d1%87%d0%b5%d1%81%d1%82%d0%b2%d0%be/">предприемачество</a> (5) </li> 
+       <li class="cat-item cat-item-2817"><a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/category/%d1%81%d0%be%d1%84%d1%82%d1%83%d0%bd%d0%b8/">СофтУни</a> (17) </li> 
+      </ul> 
+     </div> 
+    </article> 
+    <article>
+     <div class="text-widget">
+      <h3>Top Posts </h3>
+      <ul> 
+       <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2015/08/31/university-rankings-programming-it-bulgaria/" class="dashedline">Класация на университетите за програмиране. Къде да уча висше образование по компютърни науки и софтуерно инженерство?</a> </li>
+       <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2012/01/04/finding-it-job-for-beginners-seminar-12-january-2011/" class="dashedline">Семинар “Как да си намерим работа в ИТ индустрията?” – CV, cover letter, интервю</a> </li>
+       <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2011/05/09/%d1%83%d0%bd%d0%b8%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d1%82%d0%b5%d1%82-%d0%b7%d0%b0-%d1%81%d0%be%d1%84%d1%82%d1%83%d0%b5%d1%80%d0%bd%d0%b8-%d0%b8%d0%bd%d0%b6%d0%b5%d0%bd%d0%b5%d1%80%d0%b8/" class="dashedline">Университет като за софтуерни инженери: къде да учим програмиране след 12 клас? (класацията на ИТ университетите на Наков)</a> </li>
+       <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2007/12/27/overqualified-to-work-in-google/" class="dashedline">My Interview at Google in Zurich</a> </li>
+       <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2008/03/15/rejected-a-program-manager-position-at-microsoft-dublin-my-successful-interview-at-microsoft/" class="dashedline">Rejected a Program Manager Position at Microsoft Dublin – My Successful Interview at Microsoft</a> </li>
+      </ul> 
+     </div>
+    </article>
+    <article>
+     <div class="text-widget">
+      <h3>Most Viewed Posts</h3>
+      <ul> 
+       <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2014/12/22/webapi-owin-identity-custom-login-service/" class="dashedline">ASP.NET MVC Web API Identity (OWIN Security): Auto Login after Register + Custom Login Service Endpo...</a> </li>
+       <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2008/03/15/rejected-a-program-manager-position-at-microsoft-dublin-my-successful-interview-at-microsoft/" class="dashedline">Rejected a Program Manager Position at Microsoft Dublin – My Successful Interview at Microsoft</a> </li>
+       <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2007/10/31/give-full-trust-to-net-assembly-hosted-in-a-web-page-in-internet-explorer/" class="dashedline">Give full trust to .NET assembly hosted in a Web page in Internet Explorer</a> </li>
+       <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2013/10/26/wp-net-running-wordpress-in-net-clr-under-iis-through-phalanger/" class="dashedline">WP.NET: Как да изпълняваме WordPress в .NET среда и IIS чрез Phalanger?</a> </li>
+       <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2014/09/18/softuni-conf-oct-2014-borovets/" class="dashedline">SoftUni Conf – 10-12 октомври 2014, Боровец – конференция за софтуерни инженери</a> </li>
+      </ul> 
+     </div>
+    </article> 
+    <article>
+     <div class="text-widget"> 
+      <h3>Recent Posts</h3> 
+      <ul> 
+       <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2015/11/22/http2-for-developers/">HTTP/2 за разработчици</a> </li> 
+       <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2015/10/17/ruseconf-2015-orm-technologies-entity-framework/">ORM технологии за лесен достъп до бази данни с много малко писане на код</a> </li> 
+       <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2015/10/08/softuni-conf-chepelare-20-oct-1-nov-2015/">СофтУни палатка конф – Чепеларе – 30 октомври – 1 ноември</a> </li> 
+       <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2015/09/11/free-algorithms-course-at-softuni/">Записахте ли се за безплатния курс по компютърни алгоритми в СофтУни?</a> </li> 
+       <li> <a href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/blog/2015/08/31/university-rankings-programming-it-bulgaria/">Класация на университетите за програмиране. Къде да уча висше образование по компютърни науки и софтуерно инженерство?</a> </li> 
+      </ul> 
+     </div>
+    </article> 
+   </div> 
+   <script type="text/javascript" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7"></script> 
+   <script type="text/javascript" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.9b"></script> 
+   <script type="text/javascript" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJava.js?ver=3.0.9b"></script> 
+   <script type="text/javascript">
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "http://www.nakov.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.9b";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "http://www.nakov.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.9b";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script> 
+   <script type="text/javascript" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/plugins/simple-share-buttons-adder/js/ssba.min.js?ver=4.4.1"></script> 
+   <script type="text/javascript" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=https://apis.google.com/js/plusone.js"></script> 
+   <script type="text/javascript" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://platform.linkedin.com/in.js"></script> 
+   <script type="text/javascript" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://platform.twitter.com/widgets.js"></script> 
+   <script type="text/javascript" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/scripts/fb.js"></script> 
+   <script type="text/javascript" src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-includes/js/wp-embed.min.js?ver=4.4.1"></script> 
+   <link property="stylesheet" rel="stylesheet" href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/css/screen.css" type="text/css"> 
+   <link href="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css" property="stylesheet"> 
+   <script src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/js/jquery-1.11.3.min.js"></script> 
+   <script src="mailto:app@simplejtpc.appspotmail.com?subject=mail&amp;body=http://www.nakov.com/wp-content/themes/nakov_abc/js/smoothscroll.js"></script> 
+   <script>
+$(document).ready(function() {
+  $('.mobile').click(function () {
+	  $('nav').toggleClass('active'); 
+   });
+  
+});
+</script> 
+   <script language="JavaScript">
+
+function PopUp(URL) {
+window.open(URL, 'Windowname', 'width=450, height=300, toolbar=0, scrollbars=1 ,location=0 ,statusbar=0,menubar=0, resizable=0');
+}
+
+</script> 
+   <script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-11309924-3']);
+		_gaq.push(['_setDomainName', 'nakov.com']);
+		_gaq.push(['_trackPageview']);
+			
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>   
+   <!--
+Hyper cache file: 7e3a8e98683f0b7ea27ffa6fa4320540
+Cache created: 26-01-2016 14:08:23
+HCE Version: 1.4.0
+Load AVG: 0.14(3)
+-->
+  </div>
+ </body>
+</html>
+</body>
+</html>
